@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "460653752903",
+    "firebase_url": "https://fubiz-1210c.firebaseio.com",
+    "project_id": "fubiz-1210c",
+    "storage_bucket": "fubiz-1210c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460653752903:android:1e5c429b255202a2",
+        "android_client_info": {
+          "package_name": "com.ev.gone.fubiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460653752903-71m85cppshv4d1us8rdu48976q0ka0lc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ev.gone.fubiz",
+            "certificate_hash": "53c2a3a76a4e231b630f52d99e783204e2901269"
+          }
+        },
+        {
+          "client_id": "460653752903-d5ds49n9qifle19g73iamtdk299qf3fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6LpoZ0sxbLQFrjEDFSkdwUe6iflC5lEw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460653752903-d5ds49n9qifle19g73iamtdk299qf3fm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

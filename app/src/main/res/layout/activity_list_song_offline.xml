@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyanBackground"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/relative_back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/backto_alpha_main"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/backarrow" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/grid_category"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/relative_back"
+        android:orientation="horizontal"
+        android:layout_weight="5"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/mobile_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:orientation="vertical"
+            android:weightSum="6"
+            android:gravity="top">
+
+            <LinearLayout
+                android:id="@+id/alpha_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/alpha_icon_setting"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/alphawaves"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeMaxTextSize="100sp"
+                    android:autoSizeStepGranularity="2sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/volume_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/alpha_setting"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/volume_icon_setting"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/oceanwaves"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeMaxTextSize="100sp"
+                    android:autoSizeStepGranularity="2sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yanging_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/volume_setting"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/yin_icon_setting"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/timecountdown"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeMaxTextSize="100sp"
+                    android:autoSizeStepGranularity="2sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/yanging_setting"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/budhist_icon_setting"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/calmingvisualization"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeMaxTextSize="100sp"
+                    android:autoSizeStepGranularity="2sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_height="200dp"
+                    android:layout_width="200dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/circle_setting_model"
+                    android:layout_gravity="top"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/re_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="4"
+        android:padding="5dp">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:alpha="0.8"
+            android:divider="@color/line"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none">
+
+        </ListView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

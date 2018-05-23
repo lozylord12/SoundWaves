@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Fubiz</string>
+
+    <string name="loading">Loading...</string>
+
+    <!--AlphaSetting-->
+    <string name="alphawaves">Alpha Waves</string>
+    <string name="oceanwaves">Ocean Waves</string>
+    <string name="timecountdown">Time Countdown</string>
+    <string name="calmingvisualization">Calming Visualization</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Fubiz</string>
+    <string name="slide_1_desc">Welcome to SoundWave app!</string>
+
+    <string name="slide_1_desc_child">© Infinity Team</string>
+
+    <string name="slide_2_title">Alpha Screen</string>
+    <string name="slide_2_desc">Alpha waves are neural oscillations in the frequency range of 7.5–12.5 Hz arising from synchronous and coherent (in phase or constructive) electrical activity of thalamic pacemaker cells in humans.</string>
+
+    <string name="slide_3_title">Our Misson</string>
+    <string name="slide_3_desc">As science continues to fight cancer, one obstacle has been the safe and easy removal of cancer cells from the body for study. A new ally in that fight might be sound waves, which can separate cancer cells from blood cells using different frequencies.</string>
+
+    <string name="slide_4_title">Thanks!</string>
+    <string name="slide_4_desc">はろーわーるど！</string>
+
+    <string name="main_screen_desc">There are two steps to see the Intro Screen slider.\n\n1. Goto Settings -> apps -> welcome slider -> clear data.\n2. Click the below Play Again button</string>
+    <string name="play_again">Play Again</string>
+
+
+</resources>
