@@ -59,27 +59,30 @@ public class AlphaSettingActivityOffiline extends AppCompatActivity {
 
         lv1 = (ListView) findViewById(R.id.lv);
         ListSong = new ArrayList<String>();
-        ListSong.add("Chúng ta không thuộc về nhau - Sơn Tùng MTP");
-        ListSong.add("Điều Anh Biết - Chi Dân");
-        ListSong.add("Đường đến vinh quang - Bức Tường");
-        ListSong.add("Em gái mưa - Hương Tràm");
-        ListSong.add("Giấc Mơ Thần Tiên - Miu Lê");
-        ListSong.add("Lạc Trôi - Sơn Tùng MTP");
-        ListSong.add("Yêu 5 - Rhymatic");
-        ListSong.add("Yêu Là Tha Thu");
-
-
+        ListSong.add("Clair de Lune");
+        ListSong.add("Crystal Steel Collaboration");
+        ListSong.add("Liebestraum");
+        ListSong.add("Moonlight");
+        ListSong.add("Piano Sonata in F major");
+        ListSong.add("Noctune op.9 No.2");
+        ListSong.add("Piano Sonata in B major");
+        ListSong.add("Piano Sonata in G major");
 
 
         alpha_btn = (View) findViewById(R.id.alpha_setting);
         alpha_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                ArrayAdapter arr = new ArrayAdapter<String>(AlphaSettingActivityOffiline.this, android.R.layout.simple_list_item_1, ListSong);
-                lv1.setAdapter(arr);
+//                ArrayAdapter arr = new ArrayAdapter<String>(AlphaSettingActivityOffiline.this, android.R.layout.simple_list_item_1, ListSong);
+//                lv1.setAdapter(arr);
+                data_adapter_test = new ListViewAdapter(AlphaSettingActivityOffiline.this, ListSong);
+                lv1.setAdapter(data_adapter_test);
             }
         });
+
+
+//        data_adapter_test = new ListViewAdapter(AlphaSettingActivityOffiline.this, ListSong);
+//        lvsong.setAdapter(data_adapter_test);
 
 
         lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {

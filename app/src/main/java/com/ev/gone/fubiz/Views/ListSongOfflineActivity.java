@@ -31,7 +31,7 @@ public class ListSongOfflineActivity extends AppCompatActivity {
 
         alpha_btn = (View) findViewById(R.id.alpha_setting);
         listview = (ListView) findViewById(R.id.listview);
-      final ArrayList<File> mySongs = findSongs(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC));
+        final ArrayList<File> mySongs = findSongs(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC));
       //  final ArrayList<File> mySongs = findSongs(Environment.getExternalStorageDirectory());
         items = new String[mySongs.size()];
         alpha_btn.setOnClickListener(new View.OnClickListener() {

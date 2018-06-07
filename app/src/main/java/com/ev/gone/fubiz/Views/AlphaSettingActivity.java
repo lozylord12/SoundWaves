@@ -49,9 +49,12 @@ public class AlphaSettingActivity extends AppCompatActivity {
 
 
         SongManager.getInstance().load();
-//        mSongsName = SongManager.getInstance().getSongName();
+//z        mSongsName = SongManager.getInstance().getSongName();
 
         final ListView lvsong = (ListView) findViewById(R.id.listview);
+
+     //   Songs a = new Songs("Noctune op.9 No.2",8,"dfjdhdhf");
+     //      mData.child("Song").push().setValue(a);
 
         ListSong = new ArrayList<String>();
         ListUrl = new ArrayList<String>();
@@ -118,6 +121,46 @@ public class AlphaSettingActivity extends AppCompatActivity {
 
                     myIntent.putExtra("push_url", ListUrl.get(2));
                     startActivityForResult(myIntent, 2);
+                }
+
+                if (position == 3){
+                    Intent myIntent = new Intent(view.getContext(), AlphaActivity.class);
+                    myIntent.putExtra("push_song", lvsong.getItemAtPosition(4).toString());
+
+                    myIntent.putExtra("push_url", ListUrl.get(3));
+                    startActivityForResult(myIntent, 3);
+                }
+
+                if (position == 4){
+                    Intent myIntent = new Intent(view.getContext(), AlphaActivity.class);
+                    myIntent.putExtra("push_song", lvsong.getItemAtPosition(4).toString());
+
+                    myIntent.putExtra("push_url", ListUrl.get(4));
+                    startActivityForResult(myIntent, 4);
+                }
+
+                if (position == 5){
+                    Intent myIntent = new Intent(view.getContext(), AlphaActivity.class);
+                    myIntent.putExtra("push_song", lvsong.getItemAtPosition(5).toString());
+
+                    myIntent.putExtra("push_url", ListUrl.get(5));
+                    startActivityForResult(myIntent, 5);
+                }
+
+                if (position == 6){
+                    Intent myIntent = new Intent(view.getContext(), AlphaActivity.class);
+                    myIntent.putExtra("push_song", lvsong.getItemAtPosition(6).toString());
+
+                    myIntent.putExtra("push_url", ListUrl.get(6));
+                    startActivityForResult(myIntent, 6);
+                }
+
+                if (position == 7){
+                    Intent myIntent = new Intent(view.getContext(), AlphaActivity.class);
+                    myIntent.putExtra("push_song", lvsong.getItemAtPosition(7).toString());
+
+                    myIntent.putExtra("push_url", ListUrl.get(7));
+                    startActivityForResult(myIntent, 7);
                 }
 
             }

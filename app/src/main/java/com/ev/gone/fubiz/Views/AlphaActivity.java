@@ -135,23 +135,6 @@ public class AlphaActivity extends AppCompatActivity {
         Uri uri = Uri.parse(mySongs.get(i).toString());
 
 
-
-       /* if (str == null ){
-
-            mPlayers = MediaPlayer.create(this, R.raw.clairdelune);
-
-        }else {
-
-            try{
-
-                mPlayers.setDataSource(str);
-                mPlayers.prepare();
-
-            }catch (IOException e){
-                Log.v("lost data", e.getMessage());
-            }
-
-        }*/
         if (str != null){
             try{
 
@@ -331,8 +314,6 @@ public class AlphaActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-               /* Intent myintent = new Intent(AlphaActivity.this, CountdownActivity.class);
-                startActivityForResult(myintent, 1001);*/
 
                 if (isOcean && isOcean_nd && isOcean_rd) {
                     v.setBackgroundResource(R.mipmap.volume_ocean_max);
@@ -486,9 +467,7 @@ public class AlphaActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 2) {
-//            if (data == null) {
-//                timeCountInMilliSeconds = 0;
-//            } else {
+
             try {
                 timeCountInMilliSeconds = data.getLongExtra("minutes", 1) * 60 * 1000;
                 textViewTime.setText(hmsTimeFormatter(timeCountInMilliSeconds));
